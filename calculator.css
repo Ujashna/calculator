@@ -1,12 +1,14 @@
 
 body{
-  border:1;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
   display:flex;
   justify-content: center;
+  align-items: center;
+padding-top: 300px;
   height:100px;
-  margin:0;
-  background-color: #555;
+
+  background-color: rgb(0, 0, 0);
 }
 
 div{
@@ -14,14 +16,48 @@ div{
 }
 
 #display{
-  width: 160px;
-  height:40px;
+  width: 440px;
+  height:100px;
   font-size: 1.5em;
   margin-bottom:10px;
   text-align:right;
   padding:5px;
-  border:2px solid #333;
-  border radius: 5px;
+  border:2px solid #000000;
+  border-radius: 5px;
   background-color: #fff;
 
+}
+#keys{
+
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  grid-gap:10px;
+}
+button{
+
+  width:100px;
+  height: 100px;
+  font-size: 1.2em;
+background-color: #333;
+color:#fff;
+border:none;
+border-radius: 5px;
+cursor:pointer;
+transition:backgroud-color 0.2s ease,transform 0.1s ease;
+}
+
+button:hover{
+  background-color:  #555;
+}
+
+button:active{
+  background-color: #222;
+}
+
+.yellow{
+background-color: rgb(85, 255, 0);
+}
+.calculator-body{
+  border-radius: 7px;
+  border-color: rgb(4, 16, 26);
 }
